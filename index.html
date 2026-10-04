@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VIBE ZENO STUDIO</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;
+min-height:100vh;
+background:#03030a;
+color:#f7f7ff;
+font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif
+}
+body:before{
+content:"";
+position:fixed;
+inset:-25%;
+background:
+radial-gradient(circle at 12% 12%,#7c3aed66,transparent 25%),
+radial-gradient(circle at 88% 18%,#2563eb44,transparent 24%),
+radial-gradient(circle at 50% 85%,#c084fc22,transparent 30%);
+pointer-events:none
+}
+.wrap{
+max-width:1080px;
+margin:auto;
+padding:26px 20px 50px;
+position:relative
+}
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center
+}
+.brand{
+display:flex;
+gap:11px;
+align-items:center;
+font-weight:800;
+letter-spacing:.5px
+}
+.logo{
+width:42px;
+height:42px;
+border-radius:14px;
+display:grid;
+place-items:center;
+background:linear-gradient(135deg,#d8b4fe,#60a5fa);
+color:#080810;
+font-weight:900;
+box-shadow:0 0 35px #8b5cf666
+}
+.pill{
+font-size:12px;
+color:#d5d5e8;
+border:1px solid #ffffff22;
+border-radius:99px;
+padding:8px 12px;
+background:#ffffff0a
+}
+.royal{
+position:fixed;
+right:18px;
+bottom:18px;
+z-index:5;
+max-width:290px;
+padding:12px 15px;
+border:1px solid #d8b4fe55;
+border-radius:14px;
+background:#0b0920ee;
+box-shadow:0 12px 45px #0009;
+color:#e9ddff;
+font-size:11px;
+line-height:1.45;
+backdrop-filter:blur(14px)
+}
+.royal strong{
+display:block;
+color:#fff;
+font-size:12px;
+margin-bottom:3px
+}
+.hero{
+text-align:center;
+padding:75px 10px 35px
+}
+.hero h1{
+font-size:clamp(44px,7vw,78px);
+line-height:.98;
+letter-spacing:-3px;
+margin:0 0 18px
+}
+.grad{
+background:linear-gradient(90deg,#fff,#a78bfa,#60a5fa);
+color:transparent;
+background-clip:text;
+-webkit-background-clip:text
+}
+.hero p{
+max-width:690px;
+margin:auto;
+color:#b9b9d0;
+font-size:18px;
+line-height:1.65
+}
+.card{
+margin:28px auto 0;
+max-width:900px;
+min-height:540px;
+padding:16px;
+border:1px solid #c4b5fd22;
+border-radius:28px;
+background:#0d0c1ddd;
+box-shadow:0 30px 100px #000a,0 0 70px #6d28d922;
+backdrop-filter:blur(18px)
+}
+.head{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:7px 8px 16px;
+font-size:14px
+}
+.online{
+color:#8fffb4;
+font-size:12px
+}
+elevenlabs-convai{
+display:block;
+width:100%;
+min-height:460px
+}
+.features{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:14px;
+margin-top:20px
+}
+.feature{
+padding:22px;
+border:1px solid #ffffff14;
+border-radius:20px;
+background:#ffffff08
+}
+.feature .i{
+font-size:25px
+}
+.feature h3{
+margin:12px 0 7px;
+font-size:16px
+}
+.feature p{
+margin:0;
+color:#aaaac2;
+font-size:13px;
+line-height:1.6
+}
+footer{
+text-align:center;
+color:#85859c;
+font-size:12px;
+padding-top:34px
+}
+@media(max-width:700px){
+.features{grid-template-columns:1fr}
+.hero{padding-top:55px}
+.hero h1{letter-spacing:-2px}
+.card{border-radius:22px}
+.royal{
+right:12px;
+bottom:12px;
+max-width:250px
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+<div class="royal">
+<strong>💧 FIRST AI MODEL</strong>
+We are the first AI model that does not use water.
+</div>
+
+<header class="nav">
+<div class="brand">
+<div class="logo">VZ</div>
+VIBE ZENO STUDIO
+</div>
+<div class="pill">AI VOICE ASSISTANT</div>
+</header>
+
+<section class="hero">
+<h1>Meet <span class="grad">VIBE ZENO</span></h1>
+<p>
+Your intelligent AI companion for questions, learning, ideas, writing, coding, creativity, and everyday problem-solving.
+</p>
+</section>
+
+<section class="card">
+<div class="head">
+<strong>Talk to VIBE ZENO STUDIO</strong>
+<span class="online">● Ready</span>
+</div>
+
+<elevenlabs-convai
+agent-id="agent_6201m436t2dgem5sg8zpw5yfk9t8"
+disable-banner="true">
+</elevenlabs-convai>
+
+</section>
+
+<section class="features">
+
+<div class="feature">
+<div class="i">🎙️</div>
+<h3>Natural Voice</h3>
+<p>
+Have a real-time voice conversation with your AI assistant.
+</p>
+</div>
+
+<div class="feature">
+<div class="i">🧠</div>
+<h3>Think & Explain</h3>
+<p>
+Get simple explanations, study help, ideas, and problem-solving support.
+</p>
+</div>
+
+<div class="feature">
+<div class="i">✨</div>
+<h3>Create Anything</h3>
+<p>
+Work on writing, scripts, coding, brainstorming, and creative projects.
+</p>
+</div>
+
+</section>
+
+<footer>
+VIBE ZENO STUDIO · AI Voice Assistant
+</footer>
+
+</div>
+
+<script
+src="https://unpkg.com/@elevenlabs/convai-widget-embed"
+async
+type="text/javascript">
+</script>
+
+</body>
+</html>
